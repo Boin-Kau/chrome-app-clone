@@ -47,6 +47,10 @@ table {
   display: none;
 }
 
+html {
+  background-color: black;
+}
+
 /* BACKGROUND STYLING */
 #bgImage {
   position: absolute;
