@@ -1,3 +1,145 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS STYLING START! */
 .hidden {
   display: none;
 }
+
+/* BACKGROUND STYLING */
+#bgImage {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(30%);
+}
+
+/* WEATHER STYLING */
+#weather-div {
+  position: absolute;
+  z-index: 0;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  text-align: end;
+  font-size: 1rem;
+}
+
+/* QUOTE STYLING */
+#quote-div {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+}
+
+#quote-div span:first-child {
+  color: white;
+}
+
+#quote-div span:last-child {
+  color: rgb(200, 200, 200);
+}
+
+/* CENTER BOX STYLING */
+#center_container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+/* CLOCK STYLING */
+#clock {
+  font-size: 8rem;
+  border: 1px red solid;
+  margin: 2rem;
+}
+
+/* GREETING STYLING */
+#greeting {
+  font-size: 2rem;
+  border: 1px yellow solid;
+}
+
+/* LOGIN FORM STYLING */
+#login-form input {
+  border: none;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: calc(1rem/1.6);
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all, 0.4s;
+}
+
+#login-form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  
+}
+
+#login-form input:hover::-webkit-input-placeholder{ /*placeholder color change*/
+  color: rgb(50, 50, 50);
+}
+
+#login-form input:focus {
+  outline: none;
+  background-color:transparent;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+
+
+
+
+
+
+

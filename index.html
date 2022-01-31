@@ -8,20 +8,25 @@
   <title>Momentum</title>
 </head>
 <body>
-  <!-- Login-Form -->
-  <form id="login-form" class="hidden">
-    <input required type="text" placeholder="What is your name?">
-    <button>Log In</button>
-  </form>
-  <!-- Clock -->
-  <h2 id="clock"></h2>
-  <!-- Greeting  -->
-  <h1 id="greeting" class="hidden"></h1>
+  <div id="center_container">
+    <!-- Login-Form -->
+    <form id="login-form" class="hidden">
+      <input required type="text" placeholder="What is your name?">
+      <button>Log In</button>
+    </form>
+    <!-- Greeting  -->
+    <span id="greeting" class="hidden"></span>
+    <!-- Clock -->
+    <span id="clock"></span>
+    
+  </div>
+  
   <!-- Todo-Form -->
   <form id="todo-form">
     <input type="text" placeholder="Write a To Do and Press Enter" required>
   </form>
   <ul id="todo-list"></ul>
+  
   <!-- Quote -->
   <div id="quote-div">
     <span></span>
@@ -29,7 +34,7 @@
   </div>
   <!-- Weather -->
   <div id="weather-div">
-    <span></span>
+    <span></span><br>
     <span></span>
   </div>
 

@@ -5,6 +5,7 @@ const currentImage = imageList[Math.floor(Math.random() * imageList.length)];
 const bgImage = document.createElement('img');
 
 bgImage.src = `img/${currentImage}`;
+bgImage.id = 'bgImage';
 
 document.body.appendChild(bgImage);
 
