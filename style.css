@@ -100,14 +100,12 @@ table {
 /* CLOCK STYLING */
 #clock {
   font-size: 8rem;
-  border: 1px red solid;
   margin: 2rem;
 }
 
 /* GREETING STYLING */
 #greeting {
   font-size: 2rem;
-  border: 1px yellow solid;
 }
 
 /* LOGIN FORM STYLING */
@@ -136,8 +134,85 @@ table {
   color: white;
 }
 
+#login-form button {
+  margin-left: 20px;
+  width:100px;
+  height:40px;
+  border: none;
+  border-radius: 30px;
+  background-color:rgba(255,255,255,0.6);
+  color: rgb(80,80,80);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all, 0.4s;
+}
 
+#login-form button:hover {
+  background-color:rgba(255,255,255,0.8);
+}
 
+/* TODO INPUT STYLING */
+#todo-form input {
+  border: none;
+  width: 480px;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all, 0.4s;
+}
+
+#todo-form input:hover {
+  background-color: rgba(255,255,255,0.4);
+}
+
+#todo-form input:hover::-webkit-input-placeholder {
+  color: rgb(50, 50, 50);
+}
+
+#todo-form input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color:rgba(0,0,0,0);
+}
+
+/* TODO LIST STYLING */
+#todo-div {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#todo-div #todo-title {
+  font-size: 1.2rem;
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+#todo-div ul {
+  text-align: end;
+}
+
+#todo-list li {
+  padding: 0.2rem;
+}
+
+#todo-list button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.4rem;
+}
 
 
 
