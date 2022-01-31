@@ -14,6 +14,7 @@ const onLoginSubmit = (event) => {
   paintGreeting(username);
 }
 
+
 const paintGreeting = (username) => {
   greetingH1.innerText = `Hi, ${username}!`;
   greetingH1.classList.remove(HIDDEN_CLASSNAME);
